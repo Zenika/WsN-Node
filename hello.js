@@ -1,10 +1,10 @@
-// Loading required librairies
+// Loading required modules
 var http = require('http');
 
 var SERVER_PORT = 8124,
-    TWITTER_LOGIN = "login",
-    TWITTER_PASSWORD = "password",
-    TWITTER_TOPICS = "WsN_Paris,zenika";
+    TWITTER_LOGIN = 'login',
+    TWITTER_PASSWORD = 'password',
+    TWITTER_TOPICS = 'WsN_Paris,zenika';
 
 // Creating HTTP Server
 var server = http.createServer(function(req, res){
@@ -13,4 +13,7 @@ var server = http.createServer(function(req, res){
     res.end('Hello World\n');
 });
 
+// Starting the server
 server.listen(SERVER_PORT);
+
+console.log('Server running on port : ' + SERVER_PORT);
