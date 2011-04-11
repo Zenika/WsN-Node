@@ -1,10 +1,7 @@
 // Loading required modules
 var http = require('http');
 
-var SERVER_PORT = 8124,
-    TWITTER_LOGIN = 'login',
-    TWITTER_PASSWORD = 'password',
-    TWITTER_TOPICS = 'WsN_Paris,zenika';
+var SERVER_PORT = 8124;
 
 // Creating HTTP Server
 var server = http.createServer(function(req, res){
